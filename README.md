@@ -6,7 +6,7 @@ A practical case study in AI-assisted software development based on four months 
 
 The published version is available here:
 
-**[Read the full case study](./index.html)**
+**[Read the full case study](https://jemcdevitt.github.io/ai-pair-programming-case-study/)**
 
 If this repository is being viewed through GitHub Pages, the article is the site homepage.
 

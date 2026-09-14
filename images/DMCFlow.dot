@@ -1,0 +1,15 @@
+digraph DMCFlow {
+    node [fontname="Arial", fontsize="10"];
+    rankdir=LR;
+
+    barrel [label="",image="FloatingBarrel.png", fixedsize=true, width=1.5, height=1.5, imagescale=true, shape=none, peripheries=0, penwidth=0, margin=0];
+    map    [label="",image="MapReveal.png", fixedsize=true, width=1.5, height=1.5, imagescale=true, shape=none, peripheries=0, penwidth=0, margin=0];
+    marker [label="",image="TreasureMarker.png", fixedsize=true, width=1.5, height=1.5, imagescale=true, shape=none, peripheries=0, penwidth=0, margin=0];
+    guardians  [label="",image="Guardians.png", fixedsize=true, width=1.5, height=1.5, imagescale=true, shape=none, peripheries=0, penwidth=0, margin=0];
+    chest [label="",image="TreasureChest.png", fixedsize=true, width=1.5, height=1.5, imagescale=true, shape=none, peripheries=0, penwidth=0, margin=0];
+
+    barrel -> map [label="Barrel creates map"]
+    map -> marker [label="Map creates marker"]
+    marker -> guardians [label="Marker manages guardians"]
+    guardians -> chest [label="Guardians die, triggers chest"]
+}
